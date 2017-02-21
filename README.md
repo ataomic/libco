@@ -26,3 +26,6 @@ libco通过仅有的几个函数接口 co_create/co_resume/co_yield 再配合 co
  * __thread的协程私有变量、协程间通信的协程信号量co_signal (New);
  * 语言级别的lambda实现，结合协程原地编写并执行后台异步任务 (New);
  * 基于epoll/kqueue实现的小而轻的网络框架，基于时间轮盘实现的高性能定时器;
+
+热心网友写的代码心得
+https://taozj.org/201611/learn-note-of-tencent-libco-coroutine.html
