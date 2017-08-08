@@ -21,9 +21,8 @@
 #include <stdio.h>
 #include <errno.h>
 #include <string.h>
-#include <string.h>
 
-#ifndef __APPLE__
+#if !defined( __APPLE__ ) && !defined( __FreeBSD__ )
 
 int	co_epoll_wait( int epfd,struct co_epoll_res *events,int maxevents,int timeout )
 {
